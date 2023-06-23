@@ -1,0 +1,316 @@
+body {
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-size: 20px;
+}
+
+
+header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul {
+    display: contents;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+}
+
+img {
+    padding: 0;
+    width: 100%;
+    height: 95px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+#contacto {
+    background-color: white;
+    min-height: 100vh;
+    margin: 1px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.contactoUno {
+    color: black;
+    background-color: violet;
+}
+
+
+#inicio {
+    min-height: 100vh;
+    margin: 20px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    color: black;
+    text-justify: auto;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#botonHv {
+    background-color: pink;
+    display: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    font-size: bold;
+    text-decoration: none;
+    margin: 8px auto;
+    width: 140px;
+    padding: 20px;
+    color: #fbfbfb;
+}
+
+#botonHv:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.correo {
+    width: 100%;
+    max-width: 350px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin {
+    width: 100%;
+    max-width: 350px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    width: 100%;
+    max-width: 350px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    scroll-behavior: smooth;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 90px;
+}
+
+
+.img-principal {
+    padding: 20;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 60%;
+    height: 260px;
+    border: 2px solid pink;
+
+}
+
+footer p {
+    background-color: pink;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+    height: 30px;
+    padding: 25px;
+    margin: 0;
+}
+
+.boton-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        height: auto;
+        padding: auto;
+        margin: 0;
+    }
+
+    .boton-menu {
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+    }
+
+    .menu-principal {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-principal.mostrar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        order: 0;
+    }
+
+    .img-principal {
+        padding: auto;
+        min-height: 40vh;
+        width: 100%;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    h2 {
+        font-size: 36px;
+
+        margin-top: 30px;
+    }
+
+
+    li {
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+
+    #contacto .contacto1 {
+        padding: 20px;
+        width: calc(100% - 40px);
+        margin-top: 50px;
+        overflow: auto;
+    }
+
+
+    #inicio {
+        margin: 10px;
+        padding: 8px;
+        width: calc(100% - 36px);
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+
+    .correo {
+        max-width: 250px;
+        height: 80px;
+        display: inline-flexbox;
+    }
+
+    .linkedin {
+        max-width: 250px;
+        height: 80px;
+        display: inline-flexbox;
+    }
+
+    .github {
+        max-width: 250px;
+        height: 80px;
+        display: inline-flexbox;
+    }
+
+
+    #boton-cv {
+        width: 140px;
+        padding: 20px;
+    }
+
+
+    footer p {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+.menu-principal:hover {
+    display: flex !important;
+}
